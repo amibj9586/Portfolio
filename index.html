@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html  ng-app='app'>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <style>
+                
+/*      Background Image*/
+      
+      body{
+           background-image: url("images.jpg");
+      }
+      
+</style>    
+    
+</head>
+    
+<!--Main Navigation Bar-->
+    
+<body class="container" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
+  
+    <script src="app.js"></script>
+    
+    <nav style="background-color: gray;" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+            </div>                        
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a style="color: white; font-size: 30px;">Jariwala Ami</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="color: white;">Email: amibj9586@gmail.com</a></li>
+                    <li><a style="color: white;">Phone: 5107761354</a></li>
+                </ul>
+            </div>
+    </nav>
+    
+<!--    Courses Menu    -->
+        
+    <h3 style="color: white; margin-top: 8%; font-size: 20px; line-height: 1.8">User Interface Developer with 8 years of extensive experience in IT Industry on system (Web/UI) analysis, designing with HTML5, XHTML, CSS2/CSS3, JavaScript, jQuery, Bootstrap, AngularJS, ReactJS, Babel, Redux, AJAX, and JSON.</h3>
+    <nav class="navbar navbar-default row">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<ul class="nav navbar-nav">
+						<li><a ui-sref="Overview">Overview</a></li>
+						<li><a ui-sref="Experience">Experiance</a></li>
+                        <li><a ui-sref="SampleCode">Sample Codes</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="row">
+			<div class="span12">
+				<div class="well" ui-view></div>        
+			</div>
+		</div> 		
+    
+</body>
+</html>
